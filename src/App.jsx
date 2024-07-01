@@ -1,7 +1,7 @@
+import HomeLayout from "./layouts/HomeLayout";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <HomeLayout />
   )
 }
