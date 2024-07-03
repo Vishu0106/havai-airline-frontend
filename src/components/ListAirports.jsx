@@ -13,7 +13,7 @@ function ListAirports() {
     <Column minWidth={700}><span className='flex gap-1 justify-center items-center'>Airports <HiArrowSmDown className='text-lg'/></span></Column>
     <Column minWidth={180}>Country</Column>
     <Column>Code</Column>
-    <Column align='end'>Terminals</Column>
+    <Column align='end' minWidth={132}>Terminals</Column>
   </TableHeader>
   <TableBody>
     {Airports.airports.map((airport) => (

@@ -9,7 +9,7 @@ function SideMenu() {
             <ul className="flex flex-col gap-2">
                 <li>
                 <NavLink
-                  to='/home'
+                  to='/'
                   className={({ isActive }) =>
                     `cursor-pointer text-sm ${isActive ? 'bg-[#F5F5F5]' : 'bg-[#FFFFFF]'} rounded-lg block min-w-[14vh] p-2 font-sans`
                     }
@@ -34,7 +34,7 @@ function SideMenu() {
             <ul className="flex flex-col gap-1">
                 <li>
                 <NavLink
-                  to='/aiports'
+                  to='/airports'
                   className={({ isActive }) =>
                     `cursor-pointer text-sm ${isActive ? 'bg-[#F5F5F5]' : 'bg-[#FFFFFF]'} rounded-lg block min-w-[14vh] p-2 font-sans`
                     }
@@ -59,7 +59,7 @@ function SideMenu() {
             <ul className="flex flex-col gap-1">
                 <li>
                 <NavLink
-                  to='/list1'
+                  to='/others/1'
                   className={({ isActive }) =>
                     `cursor-pointer text-sm ${isActive ? 'bg-[#F5F5F5]' : 'bg-[#FFFFFF]'} rounded-lg block min-w-[14vh] p-2 font-sans`
                     }
@@ -69,7 +69,7 @@ function SideMenu() {
                 </li>
                 <li>
                 <NavLink
-                  to='list2'
+                  to='/others/2'
                   className={({ isActive }) =>
                     `cursor-pointer text-sm ${isActive ? 'bg-[#F5F5F5]' : 'bg-[#FFFFFF]'} rounded-lg block min-w-[14vh] p-2 font-sans`
                     }
@@ -79,7 +79,7 @@ function SideMenu() {
                 </li>
                 <li>
                 <NavLink
-                  to='list3'
+                  to='/others/3'
                   className={({ isActive }) =>
                     `cursor-pointer text-sm ${isActive ? 'bg-[#F5F5F5]' : 'bg-[#FFFFFF]'} rounded-lg block min-w-[14vh] p-2 font-sans`
                     }
