@@ -10,7 +10,7 @@ function HomeBody() {
   let navigate = useNavigate();
   return (
     <Provider theme={defaultTheme} colorScheme='light' router={{navigate,useHref}}>
-    <div className="bg-[#ffffff] min-h-[90vh] flex flex-col min-w-[83vw] max-w-[83vw]">
+    <div className="bg-[#ffffff] min-h-[90vh] flex flex-col w-[83vw] max-w-[83vw]">
         <div className="flex justify-between items-center pt-3 px-4 mb-4">
               <Link to={"/airpots"} className="subpixel-antialiased text-lg font-semibold p-2 font-sans text-black">Airports</Link>
               <Button variant="accent" staticColor='black'><span className='flex justify-center items-center gap-1'><MdOutlineAdd className='text-lg'/><p className='text-[14px] font-semibold'>Add new</p></span></Button>         

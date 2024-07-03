@@ -1,33 +1,31 @@
-import { TabList , Item , TabPanels } from '@adobe/react-spectrum'
-import React from 'react'
-
-function Tabs() {
+import { Provider, defaultTheme } from "@adobe/react-spectrum";
+import {Item, TabList, TabPanels, Tabs} from '@adobe/react-spectrum'
+import TerminalsTab from "./TerminalsTab";
+import ContactDetails from "./ContactDetails";
+import TransportTab from "./TransportTab";
+function Tabss() {
   return (
-    <Tabs aria-label="Chat log density example" density="compact">
-  <TabList>
-    <Item key="item1">
-      John Doe
-    </Item>
-    <Item key="item2">
-      Jane Doe
-    </Item>
-    <Item key="item3">
-      Joe Bloggs
-    </Item>
-  </TabList>
-  <TabPanels>
-    <Item key="item1">
-      There is no prior chat history with John Doe.
-    </Item>
-    <Item key="item2">
-      There is no prior chat history with Jane Doe.
-    </Item>
-    <Item key="item3">
-      There is no prior chat history with Joe Bloggs.
-    </Item>
-  </TabPanels>
-</Tabs>
+    <Provider theme={defaultTheme} colorScheme="light" UNSAFE_style={{backgroundColor:'white'}}>
+            <Tabs aria-label="History of Ancient Rome">
+                <TabList>
+                  <Item key="FoR"><p className="font-medium">Terminal</p></Item>
+                  <Item key="MaR"><p className="font-medium">Transport</p></Item>
+                  <Item key="Emp"><p className="font-medium">ContactDetails</p></Item>
+                </TabList>
+                <TabPanels>
+                  <Item key="FoR">
+                    <TerminalsTab />
+                  </Item>
+                  <Item key="MaR">
+                    <TransportTab />
+                  </Item>
+                  <Item key="Emp">
+                    <ContactDetails />
+                  </Item>
+                </TabPanels>
+            </Tabs>
+    </Provider>
   )
 }
 
-export default Tabs;
+export default Tabss;
